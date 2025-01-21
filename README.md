@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rental E-Commerce Car Renting Website Admin Dashboard 🚗
 
-## Getting Started
+Welcome to the **Rental E-Commerce Car Renting Website Admin Dashboard**! This project is a fully functional web application designed to provide users with a seamless experience for renting cars online. Built with **Next.js**, **Tailwind CSS**, and **TypeScript**, this website is modern, responsive, and easy to use. The **Admin Dashboard** empowers administrators to manage cars, bookings, users, and promotions efficiently, while the **User Dashboard** allows customers to browse, book, and review cars.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 **Live Demo**
+Check out the live version of the website deployed on Vercel:  
+👉 [Rental E-Commerce Car Renting Website](https://rentalcarecommerce.vercel.app)  
+👉 [Admin Dashboard](https://rentalcarecommerce.vercel.app/AdminDashboard)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 **Key Features**
+Here are the main functionalities and features of the website:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **1. User-Friendly Interface**
+- Clean and intuitive design for easy navigation.
+- Responsive layout for seamless use on all devices (desktop, tablet, mobile).
 
-## Learn More
+### **2. Authentication System**
+- **Signup:** Users can create an account by providing their email and password.
+- **Signin:** Users and admins can log in to access their respective dashboards.
+  - Admins can log in directly using predefined credentials (`areesha@gmail.com` and `12345678`).
+  - Users must sign up first before they can log in.
 
-To learn more about Next.js, take a look at the following resources:
+### **3. Admin Dashboard**
+- **Cars Management:** Add, edit, or remove cars.
+- **Bookings Management:** View and manage all bookings.
+- **Users Management:** View and manage user accounts.
+- **Promotions Management:** Create and manage promotions (e.g., discounts, coupons).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **4. User Dashboard**
+- **Car Listings:** Browse and filter cars by type, capacity, and price.
+- **Booking System:** Book a car for a specific duration.
+- **Wishlist:** Save favorite cars for easy access later.
+- **Reviews and Ratings:** Leave feedback for rented cars.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **5. Secure Authentication**
+- Passwords are stored securely in **localStorage** for this example.
+- Admins can log in directly without needing to sign up.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ **Technologies Used**
+- **Frontend:**
+  - Next.js (React framework for server-side rendering).
+  - Tailwind CSS (utility-first CSS framework).
+  - TypeScript (for type-safe JavaScript).
+- **Deployment:**
+  - Vercel (for hosting and continuous deployment).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🚗 **Functionality Breakdown**
+Here’s a detailed breakdown of the website’s functionality:
+
+### **1. Signup Page**
+- Users can create an account by providing their email and password.
+- Passwords are validated to ensure they match.
+- User credentials are stored in **localStorage**.
+
+### **2. Signin Page**
+- **Admins:** Can log in directly using predefined credentials
+- **Users:** Must sign up first before they can log in.
+- Redirects to the appropriate dashboard based on user role:
+  - Admins are redirected to the **AdminDashboard**.
+  - Users are redirected to the **UserDashboard**.
+
+### **3. Admin Dashboard**
+- **Cars Management:** Add, edit, or remove cars.
+- **Bookings Management:** View and manage all bookings.
+- **Users Management:** View and manage user accounts.
+- **Promotions Management:** Create and manage promotions.
+
+### **4. User Dashboard**
+- **Car Listings:** Browse and filter cars by type, capacity, and price.
+- **Booking System:** Book a car for a specific duration.
+- **Wishlist:** Save favorite cars for easy access later.
+- **Reviews and Ratings:** Leave feedback for rented cars.
